@@ -22,10 +22,10 @@ public class TextAreaFrame extends JFrame implements ActionListener{
 		textField.addActionListener(this);
 		
 		textArea = new JTextArea(10, 30);
+		//스크롤 페인
 		JScrollPane scrollpane = new JScrollPane(textArea);
 		
 		textArea.setEditable(false);
-		
 		add(textField, BorderLayout.NORTH);
 		//add(textArea, BorderLayout.CENTER);
 		add(scrollpane, BorderLayout.CENTER);
